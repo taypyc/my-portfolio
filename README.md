@@ -67,7 +67,7 @@ A selection of projects included in this portfolio:
 
 ## Technologies Used
 - Magento, Magento 2, Headless Magento
-- React, AngularJS, VueJs, NodeJs, Javascript, TypeScript, Python
+- React, Angular, VueJs, NodeJs, Javascript, TypeScript, Python
 - PHP, HTML5, CSS3, LESS, SASS, TailwindCSS, jQuery
 - Docker, Gitlab CI/CD, Wrike
 - GraphQL, Elasticsearch, MySQL
