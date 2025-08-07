@@ -1,0 +1,188 @@
+
+:root {
+    --bg-color: #1a1a1a;
+    --card-color: #2a2a2a;
+    --primary-text: #f0f0f0;
+    --secondary-text: #a0a0a0;
+    --accent-color: #00bfff; /* Deep Sky Blue */
+    --hover-color: #3c3c3c;
+    --border-color: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-text);
+}
+
+
+/* --- Секція Hero (Шапка) --- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555066931-4365d1469c13') center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-text);
+    transform: translateY(-3px);
+}
+
+
+/* --- Сітка портфоліо --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.project-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card.is-nda {
+    cursor: default;
+}
+.project-card.is-nda:hover {
+    transform: none;
+    border-color: var(--border-color);
+    box-shadow: none;
+}
+
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.project-card p {
+    color: var(--secondary-text);
+    flex-grow: 1; /* Робить так, щоб блок з текстом займав вільне місце */
+    margin-bottom: 1.5rem;
+}
+
+/* --- Теги технологій --- */
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto; /* Притискає теги до низу картки */
+}
+
+.stack span {
+    background-color: rgba(0, 191, 255, 0.1);
+    color: var(--accent-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+/* --- Футер --- */
+.site-footer {
+    background-color: #111;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-text);
+}
+
+
+/* --- Адаптивність --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero {
+        padding: 4rem 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
