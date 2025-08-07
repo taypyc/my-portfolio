@@ -1,6 +1,6 @@
 # Personal Portfolio – Serhii Avdieiev
 
-This is a personal portfolio website showcasing the web development projects of Сергій Авдєєв. The portfolio demonstrates expertise in Magento, React, modern e-commerce solutions, and a wide range of web technologies.
+This is a personal portfolio website showcasing the web development projects of Serhii Avdieiev. The portfolio demonstrates expertise in Magento, React, Angular, VueJs, NodeJs, modern e-commerce solutions, and a wide range of web technologies.
 
 ## About
 The portfolio highlights experience in:
@@ -67,8 +67,8 @@ A selection of projects included in this portfolio:
 
 ## Technologies Used
 - Magento, Magento 2, Headless Magento
-- React, AngularJS, KnockoutJS, jQuery
-- PHP, Javascript, TypeScript, HTML5, CSS3, LESS, SASS
+- React, AngularJS, VueJs, NodeJs, Javascript, TypeScript, Python
+- PHP, HTML5, CSS3, LESS, SASS, TailwindCSS, jQuery
 - Docker, Gitlab CI/CD, Wrike
 - GraphQL, Elasticsearch, MySQL
 - Wordpress, Zeplin, Figma, Adobe XD
