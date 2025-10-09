@@ -4,7 +4,7 @@
     --card-color: #2a2a2a;
     --primary-text: #f0f0f0;
     --secondary-text: #a0a0a0;
-    --accent-color: #00bfff; /* Deep Sky Blue */
+    --accent-color: #00bfff;
     --hover-color: #3c3c3c;
     --border-color: #444;
 }
@@ -13,6 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--accent-color) var(--bg-color);
+}
+
+::selection {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
 }
 
 body {
@@ -61,7 +68,7 @@ a:hover {
 }
 
 
-/* --- Секція Hero (Шапка) --- */
+/* --- Hero Section (Header) --- */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555066931-4365d1469c13') center/cover no-repeat;
     text-align: center;
@@ -90,13 +97,12 @@ a:hover {
     display: inline-block;
 }
 
-.cta-button:hover {
-    background-color: var(--primary-text);
+.cta-button:hover {    
     transform: translateY(-3px);
 }
 
 
-/* --- Сітка портфоліо --- */
+/* --- Portfolio Grid --- */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -138,16 +144,16 @@ a:hover {
 
 .project-card p {
     color: var(--secondary-text);
-    flex-grow: 1; /* Робить так, щоб блок з текстом займав вільне місце */
+    flex-grow: 1; /* Makes the text block occupy available space */
     margin-bottom: 1.5rem;
 }
 
-/* --- Теги технологій --- */
+/* --- Technology Tags --- */
 .stack {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto; /* Притискає теги до низу картки */
+    margin-top: auto; /* Pushes tags to the bottom of the card */
 }
 
 .stack span {
@@ -161,7 +167,7 @@ a:hover {
 }
 
 
-/* --- Футер --- */
+/* --- Footer --- */
 .site-footer {
     background-color: #111;
     text-align: center;
@@ -172,7 +178,7 @@ a:hover {
 }
 
 
-/* --- Адаптивність --- */
+/* --- Responsiveness --- */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
