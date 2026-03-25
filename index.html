@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio || Serhii Avdieiev</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Serhii Avdieiev's Portfolio</h1>
-            <p class="subtitle">Specializing in Magento, React, Angular, VueJs, NodeJs and creating modern web solutions.</p>
-            <a href="#projects" class="cta-button">View Projects</a>
-        </div>
+    <header class="hero py-8">
+        <h1 class="text-center mb-4 text-6xl">[ Serhii Avdieiev's Portfolio ]</h1>
+        <p class="subtitle text-center text-lg mb-4">Your Full-Stack Developer</p>
     </header>
 
-    <main id="projects" class="container">
-        <h2>My Works</h2>
-        <div class="portfolio-grid">
+    <main id="projects" class="container mx-auto">
+        <section class="container mx-auto mb-8">
+            <ul class="skills-list mb-4 flex flex-col gap-2">
+                <li>TypeScript &ndash; over 12 years</li>
+                <li>Full-Stack development &ndash; 5 years</li>
+                <li>React ecosystem (Redux, Next etc.) &ndash; over 7 years</li>
+                <li>Angular ecosystem (NgRx, Angular CLI, Angular DevTools, Angular Material etc.) &ndash; over 5 years</li>
+                <li>Vue ecosystem (VueStoreFront, Nuxt, Pinia etc.) &ndash; over 4 years</li>
+                <li>AWS Certified Solutions Architect Professional</li>
+                <li>ICAgile Certified Professional</li>
+                <li>Node (Nest, Express etc.) &ndash; over 5 years</li>
+                <li>Amazon Cloud Services, Google Cloud Platform, Azure &ndash; over 8 years</li>
+                <li>Docker, Kubernetes</li>
+                <li>CI / CD</li>
+                <li>English &ndash; Advanced</li>
+                <li>Сompliance with Web Content Accessibility Guidelines (WCAG)</li>
+            </ul>
+        </section>
+        <h2 class="mb-4 text-center text-4xl">My Works</h2>
+        <section class="portfolio-grid">
             <a href="https://genesisgame.co" target="_blank" class="project-card">
                 <h3>Genesis Game</h3>
                 <p>Development of game site with custom design and functionality.</p>
@@ -30,7 +44,7 @@
             <a href="https://billionbahis.com" target="_blank" class="project-card">
                 <h3>Billion Bahis</h3>
                 <p>Development of casino site with custom design and functionality.</p>
-                <div class="stack"><span>React</span><span>TanStack Query</span><span>NextJs</span><span>CSS3</span><span>TypeScript</span><span>Docker</span></div>
+                <div class="stack"><span>React</span><span>NextJs</span><span>NodeJs</span><span>TanStack Query</span><span>CSS3</span><span>TypeScript</span><span>Docker</span></div>
             </a>
             <a href="https://brands-stars.com.ua" target="_blank" class="project-card">
                 <h3>Brands Stars</h3>
@@ -39,18 +53,18 @@
             </a>
             <a href="https://luckystakescasino.com" target="_blank" class="project-card">
                 <h3>Lucky Stakes Casino Platform</h3>
-                <p>Research of PWA stack, environment setup and development of custom components for Magento PWA Studio.</p>
+                <p>Research of PWA stack, environment setup and development of custom components.</p>
                 <div class="stack"><span>NuxtJs</span><span>VueJs</span><span>Laravel</span><span>HTML5</span><span>Tailwind</span><span>Shadcn</span><span>Vite</span></div>
             </a>
             <a href="https://es.com.ua/" target="_blank" class="project-card">
                 <h3>EuroSouvenir</h3>
-                <p>Research of PWA stack, environment setup and development of custom components for Magento PWA Studio.</p>
-                <div class="stack"><span>Headless Magento</span><span>React</span><span>GraphQL</span></div>
+                <p>Research of PWA stack, environment setup and development of custom components.</p>
+                <div class="stack"><span>PHP</span><span>React</span><span>NextJs</span><span>NodeJs</span><span>GraphQL</span></div>
             </a>
             <a href="https://e-suvenir.com.ua/" target="_blank" class="project-card">
                 <h3>E-suvenir</h3>
-                <p>Development of Progressive Web Application based on Magento, creating GraphQL queries and custom React components.</p>
-                <div class="stack"><span>Headless Magento</span><span>React</span><span>GraphQL</span></div>
+                <p>Development of Progressive Web Application, creating GraphQL queries and custom React components.</p>
+                <div class="stack"><span>PHP</span><span>React</span><span>NextJs</span><span>NodeJs</span><span>GraphQL</span></div>
             </a>
             <div class="project-card is-nda">
                 <h3>NDA (Game)</h3>
@@ -65,8 +79,8 @@
             </div>
             <a href="https://yakaboo.ua" target="_blank" class="project-card">
                 <h3>Yakaboo</h3>
-                <p>Development of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>PHP</span><span>TypeScript</span><span>CSS3</span><span>Docker</span><span>WebPack</span><span>Grunt</span></div>
+                <p>Development of e-commerce platform with custom design and functionality.</p>
+                <div class="stack"><span>PHP</span><span>TypeScript</span><span>CSS3</span><span>Docker</span><span>WebPack</span><span>Grunt</span></div>
             </a>
             <a href="https://liga.net" target="_blank" class="project-card">
                 <h3>Liga.net (News Portal)</h3>
@@ -75,136 +89,136 @@
             </a>
             <a href="https://www.gaprecision.net/" target="_blank" class="project-card">
                 <h3>Gaprecision</h3>
-                <p>Development of Magento theme "from scratch" and customization of checkout page.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>KnockoutJS</span></div>
+                <p>Development from "scratch" and customization of checkout page.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>KnockoutJS</span></div>
             </a>
 
             <a href="https://www.arvi.ch/" target="_blank" class="project-card">
                 <h3>Arvi</h3>
-                <p>Development of custom Magento modules for a Swiss wine storage facility, allowing clients to manage collections.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>Elasticsearch</span></div>
+                <p>Development of custom modules and services for a Swiss wine storage facility, allowing clients to manage collections.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>Elasticsearch</span></div>
             </a>
             <a href="https://www.kmiyat.com/ar" target="_blank" class="project-card">
                 <h3>Kmiyat</h3>
                 <p>Front-end development for a large Arabic B2B platform, including Arabic version (RTL).</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>RTL Layout</span></div>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>RTL Layout</span></div>
             </a>
             <a href="https://brotherscountrysupply.com/" target="_blank" class="project-card">
                 <h3>Brothers Country Supply</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>RequireJS</span></div>
+                <p>Development and maintenance of e-commerce project.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>RequireJS</span></div>
             </a>
 
             <a href="https://www.bestmobile.co.il/" target="_blank" class="project-card">
                 <h3>Bestmobile</h3>
-                <p>Development and maintenance of e-commerce project for Israel market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>Elasticsearch</span></div>
+                <p>Development and maintenance of e-commerce project for Israel market.</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>Elasticsearch</span></div>
             </a>
             <a href="https://kakelgiganten.se/" target="_blank" class="project-card">
                 <h3>Kakelgiganten</h3>
-                <p>Development and maintenance of e-commerce project for Sweden market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>jQuery</span></div>
+                <p>Development and maintenance of e-commerce project for Sweden market.</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>jQuery</span></div>
             </a>
             <a href="https://www.enea.pl/" target="_blank" class="project-card">
                 <h3>ENEA</h3>
-                <p>Development and maintenance of e-commerce project for Poland market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>KnockoutJS</span></div>
+                <p>Development and maintenance of e-commerce project for Poland market.</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>KnockoutJS</span></div>
             </a>
 
             <a href="https://www.monkeesofgreenville.com/" target="_blank" class="project-card">
                 <h3>Monkees of Greenville</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>LESS</span></div>
+                <p>Development and maintenance of e-commerce project.</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>LESS</span></div>
             </a>
             <a href="https://www.mactabeauty.com/" target="_blank" class="project-card">
                 <h3>Macta Beauty</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>Grunt</span></div>
+                <p>Development and maintenance of e-commerce project.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>Grunt</span></div>
             </a>
             <a href="https://www.kinbooks.co.il/" target="_blank" class="project-card">
                 <h3>Kinbooks</h3>
-                <p>Development and maintenance of e-commerce project for Israel market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>PHP</span></div>
+                <p>Development and maintenance of e-commerce project for Israel market</p>
+                <div class="stack"><span>PHP</span><span>Docker</span></div>
             </a>
 
             <a href="https://www.paneco.co.il/" target="_blank" class="project-card">
                 <h3>Paneco</h3>
-                <p>Development and maintenance of e-commerce project for Israel market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>Elasticsearch</span></div>
+                <p>Development and maintenance of e-commerce project for Israel market</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>Elasticsearch</span></div>
             </a>
             <a href="https://www.saynet.co.il/" target="_blank" class="project-card">
                 <h3>Saynet</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>KnockoutJS</span><span>MySQL</span></div>
+                <p>Development and maintenance of e-commerce project.</p>
+                <div class="stack"><span>PHP</span><span>KnockoutJS</span><span>MySQL</span></div>
             </a>
             <a href="https://vivamknetwork.co.uk/" target="_blank" class="project-card">
                 <h3>Viva Mk network</h3>
-                <p>Development and maintenance of e-commerce project for UK market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>LESS</span></div>
+                <p>Development and maintenance of e-commerce project for UK market</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>LESS</span></div>
             </a>
 
              <a href="https://gesa.at/" target="_blank" class="project-card">
                 <h3>Gesa</h3>
-                <p>Development and maintenance of e-commerce project for Austria market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>Grunt</span></div>
+                <p>Development and maintenance of e-commerce project for Austria market.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>Grunt</span></div>
             </a>
             <a href="https://collinstreet.com/" target="_blank" class="project-card">
                 <h3>Collinstreet</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>Docker</span><span>RequireJS</span></div>
+                <p>Development and maintenance of e-commerce project.</p>
+                <div class="stack"><span>PHP</span><span>Docker</span><span>RequireJS</span></div>
             </a>
             <a href="https://frenchbedroomcompany.co.uk/" target="_blank" class="project-card">
                 <h3>Frenchbedroomcompany</h3>
-                <p>Development and maintenance of e-commerce project for UK market on Magento 2.</p>
-                <div class="stack"><span>Magento</span><span>jQuery</span><span>MySQL</span></div>
+                <p>Development and maintenance of e-commerce project for UK market.</p>
+                <div class="stack"><span>PHP</span><span>jQuery</span><span>MySQL</span></div>
             </a>
 
             <a href="https://www.jamesreadtan.com/" target="_blank" class="project-card">
                 <h3>Jamesreadtan</h3>
-                <p>Development and maintenance of e-commerce project on Magento 2 platform.</p>
-                <div class="stack"><span>Magento</span><span>KnockoutJS</span><span>Docker</span></div>
+                <p>Development and maintenance of e-commerce project</p>
+                <div class="stack"><span>PHP</span><span>KnockoutJS</span><span>Docker</span></div>
             </a>
             <a href="https://genswiss.com/" target="_blank" class="project-card">
                 <h3>Genswiss</h3>
                 <p>Development and maintenance of e-commerce project using CI/CD.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>Docker</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>Docker</span></div>
             </a>
             <a href="https://youandallfashion.com/" target="_blank" class="project-card">
                 <h3>You and all fashion</h3>
                 <p>Development and maintenance of e-commerce project using CI/CD.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>jQuery</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>jQuery</span></div>
             </a>
 
             <a href="https://sophiasstyle.com/" target="_blank" class="project-card">
                 <h3>Sophias Style</h3>
                 <p>Development and maintenance of e-commerce project using CI/CD.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>Elasticsearch</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>Elasticsearch</span></div>
             </a>
             <a href="https://allyfashion.com/" target="_blank" class="project-card">
                 <h3>Ally Fashion</h3>
                 <p>Development and maintenance of e-commerce project with CI/CD and Wrike.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>Wrike</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>Wrike</span></div>
             </a>
             <a href="https://www.smartrike.com/" target="_blank" class="project-card">
                 <h3>Smartrike</h3>
                 <p>Development and maintenance of e-commerce project using CI/CD.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>Docker</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>Docker</span></div>
             </a>
             
             <a href="https://brainmd.com/" target="_blank" class="project-card">
                 <h3>Brain MD</h3>
                 <p>Development and maintenance of e-commerce project using CI/CD.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>jQuery</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>jQuery</span></div>
             </a>
             <a href="https://pool-profi24.de/" target="_blank" class="project-card">
                 <h3>Pool Profi 24</h3>
                 <p>Development and maintenance of e-commerce project for Germany market.</p>
-                <div class="stack"><span>Magento</span><span>Gitlab CI/CD</span><span>Elasticsearch</span></div>
+                <div class="stack"><span>PHP</span><span>Gitlab CI/CD</span><span>Elasticsearch</span></div>
             </a>
             <a href="https://www.delitlv.co.il/" target="_blank" class="project-card">
                 <h3>Delitlv</h3>
-                <p>Development and maintenance of e-commerce project on legacy Magento 1 platform.</p>
-                <div class="stack"><span>Magento 1</span><span>XML</span><span>MooTools</span></div>
+                <p>Development and maintenance of e-commerce project on legacy platform.</p>
+                <div class="stack"><span>PHP</span><span>REST API</span></div>
             </a>
             
             <a href="https://b2bfunding.net/" target="_blank" class="project-card">
@@ -297,11 +311,11 @@
                 <p>Development for sports platform with Adobe XD design integration.</p>
                 <div class="stack"><span>PHP</span><span>Javascript</span><span>Adobe XD</span></div>
             </a>
-        </div>
+        </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="container mx-auto">
             <p>&copy; <span id="current-year">2025</span> Serhii Avdieiev. All rights reserved.</p>
             <p>Ready to collaborate? Contact me: <a href="mailto:sergiy.avdieiev@gmail.com">sergiy.avdieiev@gmail.com</a></p>
         </div>
@@ -310,5 +324,12 @@
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            corePlugins: { preflight: false }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

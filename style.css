@@ -1,4 +1,3 @@
-
 :root {
     --bg-color: #1a1a1a;
     --card-color: #2a2a2a;
@@ -10,9 +9,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     scrollbar-width: thin;
     scroll-behavior: smooth;
     scrollbar-color: var(--accent-color) var(--bg-color);
@@ -25,28 +21,21 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     background-color: var(--bg-color);
     color: var(--primary-text);
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--primary-text);
-    margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
     border-bottom: 2px solid var(--accent-color);
     display: inline-block;
     padding-bottom: 0.5rem;
@@ -68,23 +57,8 @@ a:hover {
     color: var(--primary-text);
 }
 
-
-/* --- Hero Section (Header) --- */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1555066931-4365d1469c13') center/cover no-repeat;
-    text-align: center;
-    padding: 6rem 2rem;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
-}
-
 .hero .subtitle {
-    font-size: 1.2rem;
     color: var(--secondary-text);
-    margin-bottom: 2rem;
 }
 
 .cta-button {
@@ -103,7 +77,6 @@ a:hover {
 }
 
 
-/* --- Portfolio Grid --- */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -149,7 +122,6 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* --- Technology Tags --- */
 .stack {
     display: flex;
     flex-wrap: wrap;
@@ -168,7 +140,6 @@ a:hover {
 }
 
 
-/* --- Footer --- */
 .site-footer {
     background-color: #111;
     text-align: center;
@@ -178,18 +149,21 @@ a:hover {
     color: var(--secondary-text);
 }
 
+.skills-list {
+    list-style: none;
+}
 
-/* --- Responsiveness --- */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero {
-        padding: 4rem 1rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
+.skills-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skills-list li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-color, #00bfff);
+    font-size: 1em;
 }
