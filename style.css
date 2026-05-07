@@ -27,7 +27,12 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--primary-text);
@@ -66,7 +71,7 @@ a:hover {
     display: inline-block;
 }
 
-.cta-button:hover {    
+.cta-button:hover {
     transform: translateY(-3px);
 }
 
@@ -98,6 +103,7 @@ a:hover {
 .project-card.is-nda {
     cursor: default;
 }
+
 .project-card.is-nda:hover {
     transform: none;
     border-color: var(--border-color);
@@ -112,7 +118,8 @@ a:hover {
 
 .project-card p {
     color: var(--secondary-text);
-    flex-grow: 1; /* Makes the text block occupy available space */
+    flex-grow: 1;
+    /* Makes the text block occupy available space */
     margin-bottom: 1.5rem;
 }
 
@@ -120,7 +127,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto; /* Pushes tags to the bottom of the card */
+    margin-top: auto;
+    /* Pushes tags to the bottom of the card */
 }
 
 .stack span {
@@ -181,7 +189,9 @@ a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal-card, .reveal-hidden {
+
+    .reveal-card,
+    .reveal-hidden {
         opacity: 1;
         transform: none;
         transition: none;
